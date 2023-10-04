@@ -80,24 +80,22 @@
           <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto" id="mainmenu">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="index.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="index.html">
                   <i class="fas fa-chart-line"></i>
                   Dashboard
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active shadow" href="users.html">
+                <a class="nav-link d-flex align-items-center gap-2 active shadow" aria-current="page" href="users.html">
                   <i class="fas fa-user"></i>
                   User/Pengguna
                 </a>
               </li>
-            </ul>
-
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
-              <span>Master Data</span>
-            </h6>
-
-            <ul class="nav flex-column mb-auto">
+              <li>
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
+                  <span>Master Data</span>
+                </h6>
+              </li>
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <i class="fas fa-users"></i>
@@ -125,6 +123,11 @@
                   <li><a class="nav-link" href="#">Sub Uraian Pekerjaan </a></li>
                   <li><a class="nav-link" href="#">Kategori Sub Uraian </a></li>
                 </ul>
+              </li>
+              <li>
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
+                  <span>Pengaturan</span>
+                </h6>
               </li>
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
@@ -154,61 +157,8 @@
         <div class="d-flex justify-content-between flex-column flex-wrap flex-md-nowrap p-3 mb-3 shadow rounded-4">
           <div class="d-flex justify-content-between mb-3">
             <h1 class="h2">Data User/Pengguna</h1>
-            <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal" data-bs-target="#addUser">Tambah Data</button>
-          </div>
-
-          <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addUserLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Entri/Edit Data Pengguna</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="namaPengguna" class="form-label">Nama Pengguna <sup class="text-danger">*</sup></label>
-                    <input type="text" class="form-control" id="namaPengguna" placeholder="isi dengan nama pengguna">
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
-                    <input type="email" class="form-control" id="email" placeholder="isi dengan email pengguna">
-                  </div>
-                  <div class="mb-3">
-                    <label for="level" class="form-label">Level <sup class="text-danger">*</sup></label>
-                    <select class="form-select" id="level" aria-label="levelAccess">
-                      <option selected>-- Pilih level akses --</option>
-                      <option value="1">Admin</option>
-                      <option value="2">Pimpinan</option>
-                      <option value="3">Superadmin</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Password <sup class="text-danger">*</sup></label>
-                    <input type="password" class="form-control" id="password" placeholder="isi dengan password">
-                  </div>
-                  <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Konfirmasi Password <sup class="text-danger">*</sup></label>
-                    <input type="password" class="form-control" id="confirmPassword" placeholder="isi dengan konfirmasi password">
-                  </div>
-                  <div class="mb-3">
-                    <label for="userStatus" class="form-label">Status <sup class="text-danger">*</sup></label>
-                    <br>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="userStatus" id="active" value="active" checked>
-                      <label class="form-check-label" for="active">Aktif</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="userStatus" id="inactive" value="inactive">
-                      <label class="form-check-label" for="inactive">Tidak Aktif</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                  <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-              </div>
-            </div>
+            <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal"
+              data-bs-target="#addUser">Tambah Data</button>
           </div>
 
           <div class="container-fluid">
@@ -252,10 +202,10 @@
                         <h5><span class="badge bg-success-subtle text-success rounded-pill">Aktif</span></h5>
                       </td>
                       <td>
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-eraser"></i></button>
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -269,16 +219,16 @@
                         <h5><span class="badge bg-success-subtle text-success rounded-pill">Aktif</span></h5>
                       </td>
                       <td>
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-eraser"></i></button>
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">3</td>
-                      <td>Narsudin Muhamad, S.E.</td>
-                      <td>narsudin79@gmail.com</td>
+                      <td>Nasrudin Muhamad, S.E.</td>
+                      <td>nasrudin79@gmail.com</td>
                       <td>+628787876543</td>
                       <td>Admin</td>
                       <td>03-10-2023 17.00</td>
@@ -286,10 +236,10 @@
                         <h5><span class="badge bg-success-subtle text-success rounded-pill">Aktif</span></h5>
                       </td>
                       <td>
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-eraser"></i></button>
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -303,10 +253,10 @@
                         <h5><span class="badge bg-success-subtle text-success rounded-pill">Aktif</span></h5>
                       </td>
                       <td>
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"><i
-                            class="fas fa-eraser"></i></button>
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                   </tbody>
@@ -324,6 +274,82 @@
       </main>
     </div>
   </div>
+
+  <!-- Modal Window to Create or Edit User -->
+  <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="addUserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header main-gradient text-white">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Entri/Edit Data Pengguna</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="namaPengguna" class="form-label">Nama Pengguna <sup class="text-danger">*</sup></label>
+            <input type="text" class="form-control" id="namaPengguna" placeholder="isi dengan nama pengguna">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+            <input type="email" class="form-control" id="email" placeholder="isi dengan email pengguna">
+          </div>
+          <div class="mb-3">
+            <label for="level" class="form-label">Level <sup class="text-danger">*</sup></label>
+            <select class="form-select" id="level" aria-label="levelAccess">
+              <option selected>-- Pilih level akses --</option>
+              <option value="1">Admin</option>
+              <option value="2">Pimpinan</option>
+              <option value="3">Superadmin</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password <sup class="text-danger">*</sup></label>
+            <input type="password" class="form-control" id="password" placeholder="isi dengan password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Konfirmasi Password <sup class="text-danger">*</sup></label>
+            <input type="password" class="form-control" id="confirmPassword"
+              placeholder="isi dengan konfirmasi password">
+          </div>
+          <div class="mb-3">
+            <label for="userStatus" class="form-label">Status <sup class="text-danger">*</sup></label>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="userStatus" id="active" value="active" checked>
+              <label class="form-check-label" for="active">Aktif</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="userStatus" id="inactive" value="inactive">
+              <label class="form-check-label" for="inactive">Tidak Aktif</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for delete confirmation -->
+  <div class="modal fade" id="deleteConfirm" aria-hidden="true" aria-labelledby="deleteConfirmLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header main-gradient text-white">
+          <h1 class="modal-title fs-6" id="deleteConfirmLabel">Hapus User</h1>
+        </div>
+        <div class="modal-body">
+          Anda yakin ingin menghapus data {nama_user}?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal" aria-label="Close">Batal</button>
+          <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- <script src="js/chart.umd.js"></script> -->
   <!-- <script src="js/dashboard.js"></script> -->
