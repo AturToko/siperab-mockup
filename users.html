@@ -152,11 +152,68 @@
 
       <main class="col-md-9 ms-sm-auto col-lg-10 mt-2 position-relative">
         <div class="d-flex justify-content-between flex-column flex-wrap flex-md-nowrap p-3 mb-3 shadow rounded-4">
-          <h1 class="h2">Data User/Pengguna</h1>
+          <div class="d-flex justify-content-between mb-3">
+            <h1 class="h2">Data User/Pengguna</h1>
+            <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal" data-bs-target="#addUser">Tambah Data</button>
+          </div>
+
+          <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addUserLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Entri/Edit Data Pengguna</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="namaPengguna" class="form-label">Nama Pengguna <sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" id="namaPengguna" placeholder="isi dengan nama pengguna">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
+                    <input type="email" class="form-control" id="email" placeholder="isi dengan email pengguna">
+                  </div>
+                  <div class="mb-3">
+                    <label for="level" class="form-label">Level <sup class="text-danger">*</sup></label>
+                    <select class="form-select" id="level" aria-label="levelAccess">
+                      <option selected>-- Pilih level akses --</option>
+                      <option value="1">Admin</option>
+                      <option value="2">Pimpinan</option>
+                      <option value="3">Superadmin</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" id="password" placeholder="isi dengan password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Konfirmasi Password <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="isi dengan konfirmasi password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="userStatus" class="form-label">Status <sup class="text-danger">*</sup></label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="userStatus" id="active" value="active" checked>
+                      <label class="form-check-label" for="active">Aktif</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="userStatus" id="inactive" value="inactive">
+                      <label class="form-check-label" for="inactive">Tidak Aktif</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                  <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="container-fluid">
             <div class="row">
-              <div class="table-responsive">
+              <div class="table-responsive m-0 p-0">
                 <div class="d-flex flex-row gap-2 align-items-center justify-content-between mb-3">
                   <div>Tampil</div>
                   <select class="form-select form-select-sm" name="perpage" id="perpage" style="width: auto;">
@@ -268,8 +325,8 @@
     </div>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/chart.umd.js"></script>
-  <script src="js/dashboard.js"></script>
+  <!-- <script src="js/chart.umd.js"></script> -->
+  <!-- <script src="js/dashboard.js"></script> -->
   <script src="js/script.js"></script>
 
 </body>
