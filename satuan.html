@@ -68,6 +68,8 @@
 
   <div class="container-fluid">
     <div class="row">
+
+      <!-- Begin Sidebar Menu -->
       <div class="sidebar border border-top-0 border-bottom-0 border-right col-md-3 col-lg-2 p-0 bg-white">
         <div class="offcanvas-md offcanvas-end bg-transparent" tabindex="-1" id="sidebarMenu"
           aria-labelledby="sidebarMenuLabel">
@@ -86,7 +88,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active shadow" aria-current="page" href="users.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="users.html">
                   <i class="fas fa-user"></i>
                   User/Pengguna
                 </a>
@@ -107,10 +109,10 @@
                   <i class="fas fa-clipboard-list"></i>
                   Uraian Pekerjaan
                 </a>
-                <ul class="submenu collapse">
+                <ul class="submenu collapse show">
                   <li><a class="nav-link" href="kategori.html">Kategori Pekerjaan </a></li>
                   <li><a class="nav-link" href="uraian.html">Uraian Pekerjaan </a></li>
-                  <li><a class="nav-link" href="satuan.html">Satuan </a> </li>
+                  <li><a class="nav-link active shadow" aria-current="page" href="satuan.html">Satuan </a> </li>
                   <li><a class="nav-link" href="tags.html">Tags/Jenis </a> </li>
                 </ul>
               </li>
@@ -158,13 +160,15 @@
           </div>
         </div>
       </div>
+      <!-- End Sidebar Menu -->
 
+      <!-- Begin Main Content -->
       <main class="col-md-9 ms-sm-auto col-lg-10 mt-2 position-relative">
         <div class="d-flex justify-content-between flex-column flex-wrap flex-md-nowrap p-3 mb-3 shadow rounded-4">
           <div class="d-flex justify-content-between mb-3">
-            <h1 class="h2">Data User/Pengguna</h1>
+            <h1 class="h2">Master Data Satuan</h1>
             <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal"
-              data-bs-target="#addUser">Tambah Data</button>
+              data-bs-target="#addSatuan">Tambah Data</button>
           </div>
 
           <div class="container-fluid">
@@ -184,83 +188,53 @@
                     style="width: auto;">
                 </div>
                 <table class="table table-hover" style="font-size: 14px;">
+                  <col width="5%">
+                  <col width="85%">
+                  <col width="10%">
                   <thead class="table-dark rounded fs-6">
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Nama Pengguna</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Phone</th>
-                      <th scope="col">Level</th>
-                      <th scope="col">Last Login</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">Nama Satuan</th>
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="lh-lg">
                       <td scope="row">1</td>
-                      <td>Agustian Lukman Hakim</td>
-                      <td>agustian@gmail.com</td>
-                      <td>+62891011121314</td>
-                      <td>Superadmin</td>
-                      <td>01-10-2023 10.10</td>
-                      <td>
-                        <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
-                      </td>
+                      <td>LS</td>
                       <td>
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addSatuan"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">2</td>
-                      <td>Erlina Idola Handoyo</td>
-                      <td>erlin123@gmail.com</td>
-                      <td>+62888888888888</td>
-                      <td>Admin</td>
-                      <td>02-10-2023 12.34</td>
-                      <td>
-                        <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
-                      </td>
+                      <td>M2</td>
                       <td>
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addSatuan"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">3</td>
-                      <td>Nasrudin Muhamad, S.E.</td>
-                      <td>nasrudin79@gmail.com</td>
-                      <td>+628787876543</td>
-                      <td>Admin</td>
-                      <td>03-10-2023 17.00</td>
-                      <td>
-                        <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
-                      </td>
+                      <td>M3</td>
                       <td>
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addSatuan"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">4</td>
-                      <td>Soca A</td>
-                      <td>socaa1234@gmail.com</td>
-                      <td>+628124578936</td>
-                      <td>Pimpinan</td>
-                      <td>04-10-2023 13.13</td>
-                      <td>
-                        <h5><span class="badge bg-danger-subtle text-danger rounded-pill fw-medium">Tidak Aktif</span></h5>
-                      </td>
+                      <td>Km</td>
                       <td>
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addUser"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addSatuan"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
@@ -295,56 +269,24 @@
         </footer>
 
       </main>
+      <!-- End Main Content -->
+
     </div>
   </div>
 
-  <!-- Modal Window to Create or Edit User -->
-  <div class="modal fade" id="addUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="addUserLabel" aria-hidden="true">
+  <!-- Modal Window to Create or Edit Satuan -->
+  <div class="modal fade" id="addSatuan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="addSatuanLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header main-gradient text-white">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Entri/Edit Data Pengguna</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Entri/Edit Data Satuan</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="namaPengguna" class="form-label">Nama Pengguna <sup class="text-danger">*</sup></label>
-            <input type="text" class="form-control" id="namaPengguna" placeholder="isi dengan nama pengguna">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email <sup class="text-danger">*</sup></label>
-            <input type="email" class="form-control" id="email" placeholder="isi dengan email pengguna">
-          </div>
-          <div class="mb-3">
-            <label for="level" class="form-label">Level <sup class="text-danger">*</sup></label>
-            <select class="form-select" id="level" aria-label="levelAccess">
-              <option selected>-- Pilih level akses --</option>
-              <option value="1">Admin</option>
-              <option value="2">Pimpinan</option>
-              <option value="3">Superadmin</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password <sup class="text-danger">*</sup></label>
-            <input type="password" class="form-control" id="password" placeholder="isi dengan password">
-          </div>
-          <div class="mb-3">
-            <label for="confirmPassword" class="form-label">Konfirmasi Password <sup class="text-danger">*</sup></label>
-            <input type="password" class="form-control" id="confirmPassword"
-              placeholder="isi dengan konfirmasi password">
-          </div>
-          <div class="mb-3">
-            <label for="userStatus" class="form-label">Status <sup class="text-danger">*</sup></label>
-            <br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="userStatus" id="active" value="active" checked>
-              <label class="form-check-label" for="active">Aktif</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="userStatus" id="inactive" value="inactive">
-              <label class="form-check-label" for="inactive">Tidak Aktif</label>
-            </div>
+            <label for="namaSatuan" class="form-label">Satuan <sup class="text-danger">*</sup></label>
+            <input type="text" class="form-control" id="namaSatuan" placeholder="isi dengan nama satuan">
           </div>
         </div>
         <div class="modal-footer">
@@ -360,10 +302,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header main-gradient text-white">
-          <h1 class="modal-title fs-6" id="deleteConfirmLabel">Hapus User</h1>
+          <h1 class="modal-title fs-6" id="deleteConfirmLabel">Hapus Satuan</h1>
         </div>
         <div class="modal-body">
-          Anda yakin ingin menghapus data {nama_user}?
+          Anda yakin ingin menghapus data {nama_satuan}?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal" aria-label="Close">Batal</button>
