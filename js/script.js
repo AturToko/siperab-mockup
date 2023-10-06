@@ -1,8 +1,8 @@
+// Closes other submenus
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
-
 //     element.addEventListener('click', function (e) {
-
 //       let nextEl = element.nextElementSibling;
 //       let parentEl = element.parentElement;
 
@@ -14,18 +14,18 @@
 //           mycollapse.hide();
 //         } else {
 //           mycollapse.show();
-//           // find other submenus with class=show
 //           var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
-//           // if it exists, then close all of them
 //           if (opened_submenu) {
 //             new bootstrap.Collapse(opened_submenu);
 //           }
 //         }
 //       }
-//     }); // addEventListener
-//   }) // forEach
+//     });
+//   })
 // });
 
+
+// Doesn't close other submenus
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
     element.addEventListener('click', function (e) {
