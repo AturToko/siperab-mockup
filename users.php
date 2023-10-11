@@ -151,6 +151,10 @@
                   <input type="email" class="form-control" id="email" placeholder="isi dengan email pengguna">
                 </div>
                 <div class="mb-3">
+                  <label for="phone" class="form-label">Phone <sup class="text-danger">*</sup></label>
+                  <input type="tel" class="form-control" id="phone" placeholder="isi dengan nomor telepon pengguna">
+                </div>
+                <div class="mb-3">
                   <label for="level" class="form-label">Level <sup class="text-danger">*</sup></label>
                   <select class="form-select" id="level" aria-label="levelAccess">
                     <option selected>-- Pilih level akses --</option>
