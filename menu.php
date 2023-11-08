@@ -102,6 +102,19 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                         Log Histori
                     </a>
                 </li>
+                <li><hr></li>
+                <li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
+                        <span>Management</span>
+                    </h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'rab.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'rab.php') ? 'page' : '';?>" href="rab.php">
+                        <i class="fas fa-file-alt"></i>
+                        RAB
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
