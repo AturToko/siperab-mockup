@@ -5,7 +5,7 @@
           <div class="d-flex justify-content-between mb-3">
             <h1 class="h2">Data Rencana Anggaran Biaya</h1>
             <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal"
-              data-bs-target="#addPejabat">Tambah Data</button>
+              data-bs-target="#addRAB">Tambah Data</button>
           </div>
 
           <div class="container-fluid">
