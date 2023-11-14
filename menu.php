@@ -113,8 +113,8 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                     </h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'uraian.php') ? 'active shadow' : '';?>"
-                        aria-current="<?=($current_page_url == 'uraian.php') ? 'page' : '';?>" href="uraian.php">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'uraian-ro.php' || $current_page_url == 'uraian-sub-ro.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'uraian-ro.php' || $current_page_url == 'uraian-sub-ro.php') ? 'page' : '';?>" href="uraian-ro.php">
                         <i class="fas fa-clipboard-list"></i>
                         Uraian Pekerjaan
                     </a>
