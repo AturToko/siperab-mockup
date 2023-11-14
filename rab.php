@@ -56,7 +56,7 @@
                       <td>12-10-2023</td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#viewRAB"><i class="fas fa-file"></i></button>
+                          onclick="location.href='detail-rab.php';"><i class="fas fa-file"></i></button>
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#addRAB"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"

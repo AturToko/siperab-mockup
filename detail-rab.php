@@ -254,7 +254,8 @@
                           data-bs-toggle="modal" data-bs-target="#detailHitung"><i class="fas fa-edit" title="Lihat Detail"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
+                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
+                         onclick="location.href='detail-rab-sub.php';" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -269,7 +270,8 @@
                           data-bs-toggle="modal" data-bs-target="#detailHitung"><i class="fas fa-edit" title="Lihat Detail"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
+                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
+                          onclick="location.href='detail-rab-sub.php';" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -298,7 +300,8 @@
                           data-bs-toggle="modal" data-bs-target="#detailHitung"><i class="fas fa-edit" title="Lihat Detail"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
+                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
+                          onclick="location.href='detail-rab-sub.php';" title="Ada Sub"><i class="fas fa-file-alt"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -449,10 +452,10 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header main-gradient text-white">
-                <h1 class="modal-title fs-6" id="deleteConfirmLabel">Hapus RAB</h1>
+                <h1 class="modal-title fs-6" id="deleteConfirmLabel">Hapus [nama_item]</h1>
               </div>
               <div class="modal-body">
-                Anda yakin ingin menghapus data {rab}?
+                Anda yakin ingin menghapus data {nama_item}?
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal" aria-label="Close">Batal</button>
@@ -567,7 +570,7 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header main-gradient text-white">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Detail Perhitungan [nama_uraian_pekerjaan]</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Detail Perhitungan [nama_uraian_pekerjaan] (Rumus 1)</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -591,12 +594,12 @@
                     </thead>
                     <tbody>
                       <tr class="lh-lg">
-                        <td class="text-center">1</td>
-                        <td class="text-center">2</td>
-                        <td class="text-center">3</td>
-                        <td class="text-center">4</td>
-                        <td class="text-center">5</td>
-                        <td class="text-center">(2*3*4)*5</td>
+                        <td class="text-left">1</td>
+                        <td class="text-end">2</td>
+                        <td class="text-end">3</td>
+                        <td class="text-end">4</td>
+                        <td class="text-end">5</td>
+                        <td class="text-end">(2*3*4)*5</td>
                       </tr>
                       <tr class="lh-lg">
                         <td>0+000 - 0+100</td>
