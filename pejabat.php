@@ -26,10 +26,11 @@
                 </div>
                 <table class="table table-hover" style="font-size: 14px;">
                   <col width="5%">
-                  <col width="30%">
                   <col width="20%">
                   <col width="20%">
-                  <col width="15%">
+                  <col width="25%">
+                  <col width="10%">
+                  <col width="10%">
                   <col width="10%">
                   <thead class="table-dark rounded fs-6">
                     <tr>
@@ -37,6 +38,7 @@
                       <th scope="col">Nama Pejabat</th>
                       <th scope="col">NIP</th>
                       <th scope="col">Jabatan</th>
+                      <th scope="col">Eselon</th>
                       <th scope="col" class="text-center">Status</th>
                       <th scope="col" class="text-center">Aksi</th>
                     </tr>
@@ -44,9 +46,10 @@
                   <tbody>
                     <tr class="lh-lg">
                       <td scope="row">1</td>
-                      <td>Agung Gumelar</td>
-                      <td>321321321321321</td>
-                      <td>Kepala Dinas</td>
+                      <td>IWAN FIRMANSAH EFFENDI, S.Sos., S.T., M.Si.</td>
+                      <td>19680323 200212 1 007</td>
+                      <td>KEPALA DINAS BINA MARGA DAN SUMBER DAYA AIR KABUPATEN TANGERANG</td>
+                      <td>II B</td>
                       <td class="text-center">
                         <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
                       </td>
@@ -59,9 +62,10 @@
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">2</td>
-                      <td>Drs. Yogi Muryanto</td>
-                      <td>123123123123123</td>
-                      <td>Kepala Bidang</td>
+                      <td>YAWAN DURIYAWAN, S.T.</td>
+                      <td>19710902 200212 1 007</td>
+                      <td>KEPALA BIDANG BINA TEKNIS DINAS BINA MARGA DAN SUMBER DAYA AIR KABUPATEN TANGERANG</td>
+                      <td>III B</td>
                       <td class="text-center">
                         <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
                       </td>
@@ -74,9 +78,10 @@
                     </tr>
                     <tr class="lh-lg">
                       <td scope="row">3</td>
-                      <td>Soca Anggoro</td>
-                      <td>198703242011012002</td>
-                      <td>Kepala Seksi</td>
+                      <td>SOCA ANGGORO WULAN, S.T., M.Eng.</td>
+                      <td>19870324 201101 2 002</td>
+                      <td>KEPALA SEKSI PERENCANAAN TEKNIS BINA MARGA DINAS BINA MARGA DAN SUMBER DAYA AIR KABUPATEN TANGERANG</td>
+                      <td>IV A</td>
                       <td class="text-center">
                         <h5><span class="badge bg-success-subtle text-success rounded-pill fw-medium">Aktif</span></h5>
                       </td>

@@ -89,8 +89,8 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'harga.php') ? 'active shadow' : '';?>"
-                        aria-current="<?=($current_page_url == 'harga.php') ? 'page' : '';?>" href="harga.php">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'harga.php' || $current_page_url == 'harga-sub.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'harga.php' || $current_page_url == 'harga-sub.php') ? 'page' : '';?>" href="harga.php">
                         <i class="fas fa-money-bill"></i>
                         Harga Satuan
                     </a>
@@ -102,7 +102,23 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                         Log Histori
                     </a>
                 </li>
-                <li><hr></li>
+
+                <!-- Menu di bawah ini hanya ada untuk role Admin -->
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
+                        <span>Master Data</span>
+                    </h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'uraian.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'uraian.php') ? 'page' : '';?>" href="uraian.php">
+                        <i class="fas fa-clipboard-list"></i>
+                        Uraian Pekerjaan
+                    </a>
+                </li>
                 <li>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
                         <span>Management</span>
@@ -113,6 +129,25 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                         aria-current="<?=($current_page_url == 'rab.php') ? 'page' : '';?>" href="rab.php">
                         <i class="fas fa-file-alt"></i>
                         RAB
+                    </a>
+                </li>
+                <li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 my-2">
+                        <span>Laporan</span>
+                    </h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'laporan-rab.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'laporan-rab.php') ? 'page' : '';?>" href="laporan-rab.php">
+                        <i class="fas fa-clipboard-list"></i>
+                        Laporan RAB
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'rekap-rab.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'rekap-rab.php') ? 'page' : '';?>" href="rekap-rab.php">
+                        <i class="fas fa-clipboard-list"></i>
+                        Rekap RAB
                     </a>
                 </li>
             </ul>

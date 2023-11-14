@@ -6,14 +6,17 @@
           <div class="d-flex justify-content-between mb-3">
             <h1 class="h2">Pengaturan Harga Satuan Tahun 2023</h1>
             <button class="btn btn-sm main-gradient rounded-3 text-white px-5" data-bs-toggle="modal"
-              data-bs-target="#copyData">Copy Data</button>
+            data-bs-target="#addKategori">Tambah Kategori</button>
           </div>
-
+          
           <div class="container-fluid">
             <div class="row">
               <div class="table-responsive m-0 p-0">
                 <div class="d-flex flex-row gap-2 align-items-center justify-content-between mb-3">
-                  <div class="flex-grow-1"></div>
+                  <div class="flex-grow-1">
+                    <!-- Nama Uraian Pekerjaan yang sedang dilihat detail Sub Uraiannya -->
+                    <h2 class="h4">1.1.1 Mobilisasi Perkerasan Beton</h2>
+                  </div>
                   <div>Pencarian</div>
                   <input type="search" name="keyword" id="keyword" class="form-control form-control-sm"
                     style="width: auto;">
@@ -27,7 +30,7 @@
                   <thead class="table-dark rounded fs-6">
                     <tr>
                       <th scope="col">No Mata Anggaran</th>
-                      <th scope="col">Nama Divisi/Kategori Uraian Pekerjaan/Nama Uraian Pekerjaan</th>
+                      <th scope="col">Kategori Sub Uraian Pekerjaan/Nama Sub Uraian Pekerjaan</th>
                       <th scope="col">Harga Satuan</th>
                       <th scope="col" class="text-center">Satuan</th>
                       <th scope="col" class="text-center">Aksi</th>
@@ -35,111 +38,93 @@
                   </thead>
                   <tbody>
                     <tr class="lh-lg table-secondary">
-                      <td scope="row" class="fw-bold">1</td>
-                      <td class="fw-bold">UMUM</td>
-                      <td></td>
-                      <td class="text-center"></td>
-                      <td class="text-center"></td>
-                    </tr>
-                    <tr class="lh-lg">
-                      <td scope="row" class="fw-bold">1.1</td>
-                      <td class="fw-bold">Mobilisasi</td>
+                      <td scope="row" class="fw-bold">A</td>
+                      <td class="fw-bold">SEWA TANAH</td>
                       <td></td>
                       <td class="text-center"></td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Uraian"><i class="fas fa-plus"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Sub Uraian"><i class="fas fa-plus"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
-                      <td scope="row">1.1.(1)</td>
-                      <td>Mobilisasi Perkerasan Beton</td>
-                      <td class="text-end"></td>
-                      <td class="text-center">LS</td>
+                      <td scope="row">1</td>
+                      <td>Sewa Tanah</td>
+                      <td class="text-end">3.000.000,00</td>
+                      <td class="text-center">m<sup>2</sup></td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editHargaSub" title="Edit"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#editHarga"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editSub" title="Lihat Sub"><i class="fas fa-file-alt"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
-                      <td scope="row">1.1.(2)</td>
-                      <td>Mobilisasi Perkerasan Lentur</td>
-                      <td class="text-end"></td>
-                      <td class="text-center">LS</td>
+                      <td scope="row">2</td>
+                      <td>Sewa Tanah Keras</td>
+                      <td class="text-end">4.000.000,00</td>
+                      <td class="text-center">m<sup>2</sup></td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editHargaSub" title="Edit"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#editHarga"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editSub" title="Lihat Sub"><i class="fas fa-file-alt"></i></button>
-                      </td>
-                    </tr>
-                    <tr class="lh-lg">
-                      <td scope="row" class="fw-bold">1.2</td>
-                      <td class="fw-bold">Keselamatan dan Kesehatan Kerja</td>
-                      <td></td>
-                      <td class="text-center"></td>
-                      <td class="text-center">
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Uraian"><i class="fas fa-plus"></i></button>
-                      </td>
-                    </tr>
-                    <tr class="lh-lg">
-                      <td scope="row">1.2.(1)</td>
-                      <td>Keselamatan dan Kesehatan Kerja A</td>
-                      <td class="text-end">250.000</td>
-                      <td class="text-center">LS</td>
-                      <td class="text-center">
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editHarga" title="Edit"><i class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
-                      </td>
-                    </tr>
-                    <tr class="lh-lg">
-                      <td scope="row">1.2.(2)</td>
-                      <td>Keselamatan dan Kesehatan Kerja B</td>
-                      <td class="text-end">250.000</td>
-                      <td class="text-center">LS</td>
-                      <td class="text-center">
-                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editHarga" title="Edit"><i class="fas fa-edit"></i></button>
-                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg table-secondary">
-                      <td scope="row" class="fw-bold">2</td>
-                      <td class="fw-bold">DRAINASE</td>
-                      <td></td>
-                      <td class="text-center"></td>
-                      <td class="text-center"></td>
-                    </tr>
-                    <tr class="lh-lg">
-                      <td scope="row" class="fw-bold">2.1</td>
-                      <td class="fw-bold">Galian</td>
+                      <td scope="row" class="fw-bold">B</td>
+                      <td class="fw-bold">PERALATAN</td>
                       <td></td>
                       <td class="text-center"></td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Uraian"><i class="fas fa-plus"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Sub Uraian"><i class="fas fa-plus"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
-                      <td scope="row">2.1.(1)</td>
-                      <td>Galian untuk Selokan Drainase dan Saluran Air</td>
-                      <td class="text-end">5.250.000</td>
-                      <td class="text-center">M2</td>
+                      <td scope="row">1</td>
+                      <td>Asphalt Mixing Plant 150 HP</td>
+                      <td class="text-end"></td>
+                      <td class="text-center"></td>
                       <td class="text-center">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editHarga" title="Edit"><i class="fas fa-edit"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#editHarga"><i class="fas fa-edit"></i></button>
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="lh-lg table-secondary">
+                      <td scope="row" class="fw-bold">C</td>
+                      <td class="fw-bold">KANTOR LAPANGAN DAN FASILITAS</td>
+                      <td></td>
+                      <td class="text-center"></td>
+                      <td class="text-center">
+                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#addHarga" title="Tambah Sub Uraian"><i class="fas fa-plus"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="lh-lg">
+                      <td scope="row">1</td>
+                      <td>Base Camp</td>
+                      <td class="text-end">2.000.000,00</td>
+                      <td class="text-center">Bulan</td>
+                      <td class="text-center">
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#editHarga"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="lh-lg">
+                      <td scope="row">2</td>
+                      <td>Gudang dan Lain-lain</td>
+                      <td class="text-end"></td>
+                      <td class="text-center"></td>
+                      <td class="text-center">
+                        <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#editHarga"><i class="fas fa-edit"></i></button>
+                        <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
+                          data-bs-toggle="modal" data-bs-target="#deleteConfirm"><i class="fas fa-eraser"></i></button>
                       </td>
                     </tr>
                   </tbody>
@@ -196,21 +181,29 @@
               </div>
               <div class="modal-body">
                 <div class="mb-3">
-                  <label for="namaKategori" class="form-label fw-bold">Kategori Uraian Pekerjaan</label>
-                  <input type="text" readonly disabled class="form-control" id="namaKategori"
-                    placeholder="isi dengan nama divisi" value="Mobilisasi">
-                </div>
-                <div class="mb-3">
-                  <label for="uraianPekerjaan" class="form-label fw-bold">Uraian Pekerjaan <sup class="text-danger">*</sup></label>
-                  <select class="form-select" placeholder="Pilih Uraian Pekerjaan" id="uraianPekerjaan">
-                    <option>Pilih Uraian Pekerjaan</option>
-                    <option value="1">Mobilisasi Perkerasan Beton</option>
-                    <option value="2">Mobilisasi Perkerasan Lentur</option>
+                  <label for="namaKategoriSub" class="form-label fw-bold">Kategori Sub Uraian Pekerjaan <sup class="text-danger">*</sup></label>
+                  <select class="form-select" placeholder="Pilih Kategori Sub Uraian Pekerjaan" id="namaKategoriSub"
+                  onchange="document.getElementById('subUraianPekerjaan').disabled = this.value == undefined">
+                    <option>Pilih Kategori Sub Uraian Pekerjaan</option>
+                    <option value="1">SEWA TANAH</option>
+                    <option value="2">PERALATAN</option>
+                    <option value="3">KANTOR LAPANGAN DAN FASILITAS</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <label for="satuan" class="form-label fw-bold">Satuan <sup class="text-danger">*</sup></label>
-                  <input type="text" readonly disabled class="form-control" id="satuan" value="LS">
+                  <label for="subUraianPekerjaan" class="form-label fw-bold">Sub Uraian Pekerjaan <sup class="text-danger">*</sup></label>
+                  <!-- Pilihan disabled dulu sebelum memilih Kategori Sub Uraian Pekerjaan di atas -->
+                  <select class="form-select" placeholder="Pilih Sub Uraian Pekerjaan" id="subUraianPekerjaan" disabled
+                    onchange="document.getElementById('satuan').value = 'm&sup2;'">
+                    <option>Pilih Sub Uraian Pekerjaan</option>
+                    <option value="1">Sewa Tanah</option>
+                    <option value="2">Sewa Tanah Keras</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="satuan" class="form-label fw-bold">Satuan</label>
+                  <!-- Default value ambil dari master Sub Uraian Pekerjaan sesuai pilihan di atas -->
+                  <input type="text" readonly disabled class="form-control" id="satuan" value="">
                 </div>
                 <div class="mb-3">
                   <label for="hargaSatuan" class="form-label fw-bold">Harga Satuan <sup class="text-danger">*</sup></label>
@@ -224,7 +217,7 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Modal Window to Edit Harga -->
         <div class="modal fade" id="editHarga" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
           aria-labelledby="editHargaLabel" aria-hidden="true">
@@ -236,67 +229,26 @@
               </div>
               <div class="modal-body">
                 <div class="mb-3">
-                  <label for="namaKategori" class="form-label fw-bold">Kategori Uraian Pekerjaan</label>
-                  <input type="text" readonly disabled class="form-control" id="namaKategori"
-                    placeholder="isi dengan nama divisi" value="Mobilisasi">
+                  <label for="namaKategoriSub" class="form-label fw-bold">Kategori Sub Uraian Pekerjaan</label>
+                  <input type="text" readonly disabled class="form-control" id="namaKategoriSub"
+                    placeholder="isi dengan nama kategori" value="SEWA TANAH">
                 </div>
                 <div class="mb-3">
-                  <label for="uraianPekerjaan" class="form-label fw-bold">Uraian Pekerjaan <sup class="text-danger">*</sup></label>
-                  <select class="form-select" placeholder="Pilih Uraian Pekerjaan" id="uraianPekerjaan" disabled>
-                    <option>Pilih Uraian Pekerjaan</option>
-                    <option value="1" selected>Mobilisasi Perkerasan Beton</option>
-                    <option value="2">Mobilisasi Perkerasan Lentur</option>
+                  <label for="subUraianPekerjaan" class="form-label fw-bold">Sub Uraian Pekerjaan <sup class="text-danger">*</sup></label>
+                  <select class="form-select" placeholder="Pilih Sub Uraian Pekerjaan" id="subUraianPekerjaan" disabled>
+                    <option>Pilih Sub Uraian Pekerjaan</option>
+                    <option value="1" selected>Sewa Tanah</option>
+                    <option value="2">Sewa Tanah Keras</option>
                   </select>
                 </div>
                 <div class="mb-3">
                   <label for="satuan" class="form-label fw-bold">Satuan <sup class="text-danger">*</sup></label>
-                  <input type="text" readonly disabled class="form-control" id="satuan" value="LS">
+                  <!-- Default value ambil dari master Sub Uraian Pekerjaan -->
+                  <input type="text" readonly disabled class="form-control" id="satuan" value="m&sup2">
                 </div>
                 <div class="mb-3">
                   <label for="hargaSatuan" class="form-label fw-bold">Harga Satuan <sup class="text-danger">*</sup></label>
                   <input type="number" class="form-control" id="hargaSatuan" placeholder="isi dengan harga satuan">
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button type="submit" class="btn btn-primary">Simpan</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal Window to Edit Harga Sub -->
-        <div class="modal fade" id="editHargaSub" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="editHargaSubLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header main-gradient text-white">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Input Harga Satuan</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="mb-3">
-                  <label for="namaKategori" class="form-label fw-bold">Kategori Uraian Pekerjaan</label>
-                  <input type="text" readonly disabled class="form-control" id="namaKategori"
-                    placeholder="isi dengan nama divisi" value="Mobilisasi">
-                </div>
-                <div class="mb-3">
-                  <label for="uraianPekerjaan" class="form-label fw-bold">Uraian Pekerjaan <sup class="text-danger">*</sup></label>
-                  <select class="form-select" placeholder="Pilih Uraian Pekerjaan" id="uraianPekerjaan" disabled>
-                    <option>Pilih Uraian Pekerjaan</option>
-                    <option value="1" selected>Mobilisasi Perkerasan Beton</option>
-                    <option value="2">Mobilisasi Perkerasan Lentur</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label for="satuan" class="form-label fw-bold">Satuan <sup class="text-danger">*</sup></label>
-                  <input type="text" readonly disabled class="form-control" id="satuan" value="LS">
-                </div>
-                <div class="mb-3">
-                  <label for="hargaSatuan" class="form-label fw-bold">Harga Satuan <sup class="text-danger">*</sup></label>
-                  <!-- <input type="number" class="form-control" id="hargaSatuan" placeholder="isi dengan harga satuan"> -->
-                  <br>
-                  <button type="button" class="btn btn-info">Lihat di Sub Uraian Pekerjaan</button>
                 </div>
               </div>
               <div class="modal-footer">
