@@ -13,7 +13,7 @@
             <div class="row">
               <div class="table-responsive m-0 p-0">
                 <!-- Nama Uraian Pekerjaan yang sedang dilihat detail Sub Uraiannya -->
-                <h2 class="h4">1.1.1 Mobilisasi Perkerasan Beton</h2>
+                <h2 class="h5 mb-3">&laquo; <a href="harga.php" class="text-muted">1.1.1 Mobilisasi Perkerasan Beton</a></h2>
                 <div class="d-flex flex-row gap-2 align-items-center justify-content-between mb-3">
                   <div class="flex-grow-1">
                     

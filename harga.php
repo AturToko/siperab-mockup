@@ -62,7 +62,7 @@
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editSub" title="Lihat Sub"><i class="fas fa-file-alt"></i></button>
+                          onclick="location.href='harga-sub.php';"><i class="fas fa-file-alt"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -76,7 +76,7 @@
                         <button class="btn rounded-3 bg-danger text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#deleteConfirm" title="Hapus"><i class="fas fa-eraser"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#editSub" title="Lihat Sub"><i class="fas fa-file-alt"></i></button>
+                          onclick="location.href='harga-sub.php';"><i class="fas fa-file-alt"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">

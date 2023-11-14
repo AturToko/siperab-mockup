@@ -56,7 +56,7 @@
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#subUraian" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
+                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -71,7 +71,7 @@
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#subUraian" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
+                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -86,7 +86,7 @@
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#subUraian" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
+                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -101,7 +101,7 @@
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
                         <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          data-bs-toggle="modal" data-bs-target="#subUraian" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
+                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                   </tbody>

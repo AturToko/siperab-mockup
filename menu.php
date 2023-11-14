@@ -137,8 +137,8 @@ $current_page_url = basename($_SERVER['PHP_SELF']);
                     </h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'laporan-rab.php') ? 'active shadow' : '';?>"
-                        aria-current="<?=($current_page_url == 'laporan-rab.php') ? 'page' : '';?>" href="laporan-rab.php">
+                    <a class="nav-link d-flex align-items-center gap-2 <?=($current_page_url == 'laporan-rab.php' || $current_page_url == 'laporan-rab-sub.php') ? 'active shadow' : '';?>"
+                        aria-current="<?=($current_page_url == 'laporan-rab.php' || $current_page_url == 'laporan-rab-sub.php') ? 'page' : '';?>" href="laporan-rab.php">
                         <i class="fas fa-clipboard-list"></i>
                         Laporan RAB
                     </a>
