@@ -3,7 +3,7 @@
       <main class="col-md-9 ms-sm-auto col-lg-10 mt-2 mb-5 position-relative h-100">
         <div class="d-flex justify-content-between flex-column flex-wrap flex-md-nowrap p-3 mb-3 shadow rounded-4">
           <div class="d-flex justify-content-between mb-3">
-            <h1 class="h2">Laporan Rencana Anggaran Biaya (RAB)</h1>
+            <h1 class="h2">Rekap Rencana Anggaran Biaya (RAB)</h1>
           </div>
 
           <div class="container-fluid">
@@ -55,8 +55,6 @@
                       <td class="text-center text-nowrap">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -70,8 +68,6 @@
                       <td class="text-center text-nowrap">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -85,8 +81,6 @@
                       <td class="text-center text-nowrap">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                     <tr class="lh-lg">
@@ -100,8 +94,6 @@
                       <td class="text-center text-nowrap">
                         <button class="btn rounded-3 bg-success text-white text-sm action-button fs-6 p-2"
                           data-bs-toggle="modal" data-bs-target="#exportReport" title="Ekspor"><i class="fas fa-file-export"></i></button>
-                        <button class="btn rounded-3 bg-info text-white text-sm action-button fs-6 p-2"
-                          onclick="location.href='laporan-rab-sub.php';" title="Lihat Sub Uraian Pekerjaan"><i class="fas fa-clipboard-list"></i></button>
                       </td>
                     </tr>
                   </tbody>
