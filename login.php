@@ -2,7 +2,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <script src="js/color-modes.js"></script>
+  <!-- <script src="js/color-modes.js"></script> -->
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,55 @@
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-6 vh-100 d-none d-md-flex justify-content-center align-items-center shadow" style="background-color: #f0f1f6;">
+        <img src="img/illustration.svg" alt="">
+      </div>
+
+      <main class="col-12 col-md-6 ms-sm-auto">
+
+        <div class="vh-100 d-flex flex-column justify-content-center align-items-center mx-auto w-100">
+          <div class="text-center mb-4 w-75">
+            <img src="img/logo.png" alt="SIPERAB Logo" class="mb-5 w-100" style="max-width: 250px;">
+            <h1 class="h4 mb-3 fw-bold">Sign In</h1>
+            <h2 class="h5 mb-3 fw-bold">Selamat Datang!</h2>
+          </div>
+          <form class="w-75" action="{{ route('authenticate') }}" method="POST">
+            @csrf
+            <div class="mb-3">
+              <label for="username" class="form-label fw-bold">Email/Phone</label>
+              <input type="text" id="username" name="email" class="form-control" placeholder="Masukkan Email/Phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label fw-bold">Password</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan Password" required>
+              @error('email')
+              <div class="invalid-feedback" style="display:block !important;">
+                  <small>{{ $message }}</small>
+              </div>
+              @enderror
+            </div>
+            <div class="text-end">
+              <a href="forgot.php" class="text-muted text-decoration-none"><small>Lupa Password?</small></a>
+            </div>
+            <br>
+            <button class="btn w-100 main-gradient text-white" type="submit">Login</button>
+          </form>
+        </div>
+
+        <footer class="mt-3 rounded-4 position-absolute bottom-0">
+          Copyright © 2023 Dinas Bina Marga dan Sumber Daya Air Kabupaten Tangerang
+        </footer>
+      </main>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+<!-- <body>
   <div class="container-fluid">
     <div class="row">
       <div class="col-6 vh-100 d-flex justify-content-center align-items-center shadow" style="background-color: #f0f1f6;">
@@ -48,7 +97,7 @@
               <input type="password" id="password" class="form-control" placeholder="Masukkan Password" required>
             </div>
             <div class="text-end">
-              <a href="#" class="text-muted text-decoration-none"><small>Lupa Password?</small></a>
+              <a href="forgot.php" class="text-muted text-decoration-none"><small>Lupa Password?</small></a>
             </div>
             <br>
             <button class="btn w-100 main-gradient text-white" type="submit">Login</button>
@@ -64,6 +113,6 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 
-</body>
+</body> -->
 
 </html>
